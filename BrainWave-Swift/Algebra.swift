@@ -8,7 +8,7 @@
 
 import Foundation
 
-func timeTables(_ num: Int) -> (one: Int, two: Int, three: Int, four: Int, five: Int, six: Int, seven: Int, eight: Int, nine: Int, ten: Int, eleven: Int, twelve: Int) {
+func timeTables(_ num: Int) -> (one: Int, two: Int, three: Int, four: Int, five: Int, six: Int, seven: Int, eight: Int, nine: Int, ten: Int, eleven: Int, twelve: Int, thirteen: Int, fourteen: Int, fifteen: Int) {
     
     let one: Int = num * 1
     let two: Int = num * 2
@@ -22,6 +22,9 @@ func timeTables(_ num: Int) -> (one: Int, two: Int, three: Int, four: Int, five:
     let ten: Int = num * 10
     let eleven: Int = num * 11
     let twelve: Int = num * 12
+    let thirteen: Int = num * 13
+    let fourteen: Int = num * 14
+    let fifteen: Int = num * 15
     
-    return (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve)
+    return (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen)
 }
