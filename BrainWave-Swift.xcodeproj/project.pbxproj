@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320BE61E1F266EF600A6391C /* ArrayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BE61D1F266EF600A6391C /* ArrayOperation.swift */; };
+		3255B4BF1F39420500F02A2D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3255B4BE1F39420500F02A2D /* LinkedList.swift */; };
 		3262100C1F1FC1060081F03A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262100B1F1FC1060081F03A /* main.swift */; };
+		326210181F1FC1A80081F03A /* SearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210141F1FC1A80081F03A /* SearchAlgorithm.swift */; };
+		326210191F1FC1A80081F03A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210151F1FC1A80081F03A /* Stack.swift */; };
+		3262101A1F1FC1A80081F03A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210161F1FC1A80081F03A /* Queue.swift */; };
+		3262101B1F1FC1A80081F03A /* SortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210171F1FC1A80081F03A /* SortAlgorithm.swift */; };
+		3262101D1F1FC5680081F03A /* DomainHits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262101C1F1FC5680081F03A /* DomainHits.swift */; };
+		3262101F1F1FC8230081F03A /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262101E1F1FC8230081F03A /* Geometry.swift */; };
+		326210211F1FCC080081F03A /* Algebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210201F1FCC070081F03A /* Algebra.swift */; };
+		326210231F1FCEE00081F03A /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210221F1FCEE00081F03A /* MathOperation.swift */; };
+		32FD59851F30E4C5008BAD61 /* Hashtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FD59841F30E4C5008BAD61 /* Hashtable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		320BE61D1F266EF600A6391C /* ArrayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayOperation.swift; sourceTree = "<group>"; };
+		3255B4BE1F39420500F02A2D /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		326210081F1FC1060081F03A /* BrainWave-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BrainWave-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3262100B1F1FC1060081F03A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		326210141F1FC1A80081F03A /* SearchAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAlgorithm.swift; sourceTree = "<group>"; };
+		326210151F1FC1A80081F03A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		326210161F1FC1A80081F03A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		326210171F1FC1A80081F03A /* SortAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAlgorithm.swift; sourceTree = "<group>"; };
+		3262101C1F1FC5680081F03A /* DomainHits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainHits.swift; sourceTree = "<group>"; };
+		3262101E1F1FC8230081F03A /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		326210201F1FCC070081F03A /* Algebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algebra.swift; sourceTree = "<group>"; };
+		326210221F1FCEE00081F03A /* MathOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
+		32FD59841F30E4C5008BAD61 /* Hashtable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hashtable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,17 @@
 			isa = PBXGroup;
 			children = (
 				3262100B1F1FC1060081F03A /* main.swift */,
+				326210141F1FC1A80081F03A /* SearchAlgorithm.swift */,
+				326210151F1FC1A80081F03A /* Stack.swift */,
+				326210161F1FC1A80081F03A /* Queue.swift */,
+				326210171F1FC1A80081F03A /* SortAlgorithm.swift */,
+				3262101C1F1FC5680081F03A /* DomainHits.swift */,
+				3262101E1F1FC8230081F03A /* Geometry.swift */,
+				326210201F1FCC070081F03A /* Algebra.swift */,
+				326210221F1FCEE00081F03A /* MathOperation.swift */,
+				320BE61D1F266EF600A6391C /* ArrayOperation.swift */,
+				32FD59841F30E4C5008BAD61 /* Hashtable.swift */,
+				3255B4BE1F39420500F02A2D /* LinkedList.swift */,
 			);
 			path = "BrainWave-Swift";
 			sourceTree = "<group>";
@@ -121,7 +154,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326210211F1FCC080081F03A /* Algebra.swift in Sources */,
+				326210231F1FCEE00081F03A /* MathOperation.swift in Sources */,
+				3262101A1F1FC1A80081F03A /* Queue.swift in Sources */,
+				320BE61E1F266EF600A6391C /* ArrayOperation.swift in Sources */,
+				3262101B1F1FC1A80081F03A /* SortAlgorithm.swift in Sources */,
+				326210191F1FC1A80081F03A /* Stack.swift in Sources */,
+				3255B4BF1F39420500F02A2D /* LinkedList.swift in Sources */,
 				3262100C1F1FC1060081F03A /* main.swift in Sources */,
+				3262101D1F1FC5680081F03A /* DomainHits.swift in Sources */,
+				3262101F1F1FC8230081F03A /* Geometry.swift in Sources */,
+				326210181F1FC1A80081F03A /* SearchAlgorithm.swift in Sources */,
+				32FD59851F30E4C5008BAD61 /* Hashtable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +299,7 @@
 				326210111F1FC1060081F03A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
