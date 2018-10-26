@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		320BE61E1F266EF600A6391C /* ArrayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BE61D1F266EF600A6391C /* ArrayOperation.swift */; };
+		322A9E762183C3AA00535BD6 /* ShortestPathAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A9E752183C3AA00535BD6 /* ShortestPathAlgorithm.swift */; };
 		3255B4BF1F39420500F02A2D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3255B4BE1F39420500F02A2D /* LinkedList.swift */; };
 		3262100C1F1FC1060081F03A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262100B1F1FC1060081F03A /* main.swift */; };
 		326210181F1FC1A80081F03A /* SearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326210141F1FC1A80081F03A /* SearchAlgorithm.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		320BE61D1F266EF600A6391C /* ArrayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayOperation.swift; sourceTree = "<group>"; };
+		322A9E752183C3AA00535BD6 /* ShortestPathAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathAlgorithm.swift; sourceTree = "<group>"; };
 		3255B4BE1F39420500F02A2D /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		326210081F1FC1060081F03A /* BrainWave-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BrainWave-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3262100B1F1FC1060081F03A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				320BE61D1F266EF600A6391C /* ArrayOperation.swift */,
 				32FD59841F30E4C5008BAD61 /* Hashtable.swift */,
 				3255B4BE1F39420500F02A2D /* LinkedList.swift */,
+				322A9E752183C3AA00535BD6 /* ShortestPathAlgorithm.swift */,
 			);
 			path = "BrainWave-Swift";
 			sourceTree = "<group>";
@@ -122,7 +125,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Thinh Le";
 				TargetAttributes = {
 					326210071F1FC1060081F03A = {
@@ -157,6 +160,7 @@
 				326210211F1FCC080081F03A /* Algebra.swift in Sources */,
 				326210231F1FCEE00081F03A /* MathOperation.swift in Sources */,
 				3262101A1F1FC1A80081F03A /* Queue.swift in Sources */,
+				322A9E762183C3AA00535BD6 /* ShortestPathAlgorithm.swift in Sources */,
 				320BE61E1F266EF600A6391C /* ArrayOperation.swift in Sources */,
 				3262101B1F1FC1A80081F03A /* SortAlgorithm.swift in Sources */,
 				326210191F1FC1A80081F03A /* Stack.swift in Sources */,
@@ -182,15 +186,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,15 +243,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,6 +279,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};

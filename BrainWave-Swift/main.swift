@@ -9,12 +9,12 @@
 import Foundation
 
 // 20 Recursion
-func printFirstNumbers(_ N: Int) {
-    if N > 1 {
-        printFirstNumbers(N - 1)
-    }
-    print(N)
-}
+//func printFirstNumbers(_ N: Int) {
+//    if N > 1 {
+//        printFirstNumbers(N - 1)
+//    }
+//    print(N)
+//}
 
 //printFirstNumbers(3)
 
@@ -189,10 +189,10 @@ func printFirstNumbers(_ N: Int) {
 //print("factorial of \(a) is \(MathOperation.factorial(a))")
 
 // 10 time Tables
-for i in 1...15 {
-    let mults = timeTables(i)
-    print("table: \(mults.one)\t, \(mults.two)\t, \(mults.three)\t, \(mults.four)\t, \(mults.five)\t, \(mults.six)\t, \(mults.seven)\t, \(mults.eight)\t, \(mults.nine)\t, \(mults.ten)\t, \(mults.eleven)\t, \(mults.twelve)\t \(mults.thirteen)\t \(mults.fourteen)\t \(mults.fifteen)\t")
-}
+//for i in 1...15 {
+//    let mults = timeTables(i)
+//    print("table: \(mults.one)\t, \(mults.two)\t, \(mults.three)\t, \(mults.four)\t, \(mults.five)\t, \(mults.six)\t, \(mults.seven)\t, \(mults.eight)\t, \(mults.nine)\t, \(mults.ten)\t, \(mults.eleven)\t, \(mults.twelve)\t \(mults.thirteen)\t \(mults.fourteen)\t \(mults.fifteen)\t")
+//}
 
 // 9 Math ops
 //let a = 2.0
