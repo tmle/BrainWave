@@ -110,5 +110,21 @@ extension LinkedList: CustomStringConvertible {
     }
 }
 
+// Test - LinkedList
+//let dogBreeds = LinkedList<String>()
+//dogBreeds.append(value: "Labrador")
+//dogBreeds.append(value: "Bulldog")
+//dogBreeds.append(value: "Beagle")
+//dogBreeds.append(value: "Husky")
+//print(dogBreeds.nodeAt(index: 2)!.value)
+//print(dogBreeds)
+//
+//let numbers = LinkedList<Int>()
+//numbers.append(value: 5)
+//numbers.append(value: 10)
+//print(numbers.nodeAt(index: 1)!.value)
+//print(numbers)
+
+
 
 

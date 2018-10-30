@@ -47,20 +47,6 @@ import Foundation
 //}
 //print(replacedString)
 
-// 18 LinkedList
-//let dogBreeds = LinkedList<String>()
-//dogBreeds.append(value: "Labrador")
-//dogBreeds.append(value: "Bulldog")
-//dogBreeds.append(value: "Beagle")
-//dogBreeds.append(value: "Husky")
-//print(dogBreeds.nodeAt(index: 2)!.value)
-//print(dogBreeds)
-//
-//let numbers = LinkedList<Int>()
-//numbers.append(value: 5)
-//numbers.append(value: 10)
-//print(numbers)
-
 // 17 findPrime
 //let num = 2
 //print("Is \(num) a prime number = \(MathOperation.isPrime(num))")
