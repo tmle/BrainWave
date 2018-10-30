@@ -47,7 +47,7 @@ import Foundation
 //}
 //print(replacedString)
 
-// 17 findPrime
+ 17 findPrime
 //let num = 2
 //print("Is \(num) a prime number = \(MathOperation.isPrime(num))")
 //var lo = 1
