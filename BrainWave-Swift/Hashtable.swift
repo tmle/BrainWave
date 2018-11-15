@@ -23,7 +23,7 @@ public struct HashTable<Key: Hashable, Value> {
     }
     
     private func index(forKey key: Key) -> Int {
-        //print(" \(abs(key.hashValue) % buckets.count), \(key.hashValue), \(buckets.count)")
+//        print(" \(abs(key.hashValue) % buckets.count), \(key.hashValue), \(buckets.count)")
         return abs(key.hashValue) % buckets.count
     }
     
@@ -99,3 +99,54 @@ public struct HashTable<Key: Hashable, Value> {
     }
 
 }
+
+// testing hash table
+//16 hashTable
+//var hashTable = HashTable<String, String>(capacity: 31) //31
+//let letters: NSString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//var licensePlateNumber: String = ""
+//let searchPlate: String = "5FAU288"
+//var numPlate: Int = 10000 // 9*26*26*26*1000 //5*26*26*26 //*26*26*26; // 25244537/2; // 9*26*26*1000; //9*26*26*26*1000 = 158,184,000;  9*26*26*1000 = 6084000
+//var firstDigit: Int
+//
+//var start = DispatchTime.now()
+//for i in 0..<numPlate {
+//    let randomString : NSMutableString = NSMutableString(capacity: 3)
+//    
+//    for _ in 0..<3 {
+//        //var length = UInt32(letters.length)
+//        let randIndex = arc4random_uniform(26)
+//        randomString.appendFormat("%C", letters.character(at: Int(randIndex)))
+//    }
+//    
+//    firstDigit = Int(arc4random_uniform(5+1)) + 2
+//    if (firstDigit >= 2 ) {
+//        licensePlateNumber = String(format: "%d%@%.3d", firstDigit, randomString, arc4random_uniform(1000))
+//        hashTable[licensePlateNumber] = "Active"
+//    }
+//    
+//    if i == numPlate - 1 {
+//        hashTable["5FAU288"] = "Active"
+//    }
+//    
+//}
+//var end = DispatchTime.now()   // <<<<<<<<<<   end time
+//var nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds //
+//print("Time to generate a hashtable of \(numPlate) license plates is \(nanoTime/1000000) milli-seconds")
+//
+////print("5FAU288 is \(String(describing: hashTable.search(forKey:"5FAU288")!))")
+//
+//start = DispatchTime.now()
+//print("Searching for \(searchPlate) ... \(String(describing: hashTable.search(forKey:searchPlate)!))")
+//end = DispatchTime.now()
+//nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
+//print("Time to search for \(searchPlate) in \(numPlate) license plates is \(nanoTime/1000000) milli-seconds")
+//==
+//var hashTable = HashTable<String, String>(capacity: 31)
+//hashTable["5FAU288"] = "Active"   // insert
+//let x = hashTable["5FAU288"]     // lookup
+//print("5FAU288 is \(String(describing: x!))")
+//hashTable["5FAU288"] = "Inactive"   // update
+//print("5FAU288 is \(String(describing: hashTable.value(forKey:"5FAU288")!))")
+//print("5FAU289 is \(String(describing: hashTable.search(forKey:"5FAU289")!))")
+

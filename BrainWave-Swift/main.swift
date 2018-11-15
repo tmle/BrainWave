@@ -8,6 +8,50 @@
 
 import Foundation
 
+//=== Test area ===
+//16 hashTable
+var hashTable = HashTable<String, String>(capacity: 31) //31
+let letters: NSString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var licensePlateNumber: String = ""
+let searchPlate: String = "5FAU288"
+var numPlate: Int = 10000 // 9*26*26*26*1000 //5*26*26*26 //*26*26*26; // 25244537/2; // 9*26*26*1000; //9*26*26*26*1000 = 158,184,000;  9*26*26*1000 = 6084000
+var firstDigit: Int
+
+var start = DispatchTime.now()
+for i in 0..<numPlate {
+    let randomString : NSMutableString = NSMutableString(capacity: 3)
+
+    for _ in 0..<3 {
+        //var length = UInt32(letters.length)
+        let randIndex = arc4random_uniform(26)
+        randomString.appendFormat("%C", letters.character(at: Int(randIndex)))
+    }
+
+    firstDigit = Int(arc4random_uniform(5+1)) + 2
+    if (firstDigit >= 2 ) {
+        licensePlateNumber = String(format: "%d%@%.3d", firstDigit, randomString, arc4random_uniform(1000))
+        hashTable[licensePlateNumber] = "Active"
+    }
+
+        if i == numPlate - 1 {
+            hashTable["5FAU288"] = "Active"
+        }
+
+}
+var end = DispatchTime.now()   // <<<<<<<<<<   end time
+var nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds //
+print("Time to generate a hashtable of \(numPlate) license plates is \(nanoTime/1000000) milli-seconds")
+
+//print("5FAU288 is \(String(describing: hashTable.search(forKey:"5FAU288")!))")
+
+start = DispatchTime.now()
+print("Searching for \(searchPlate) ... \(String(describing: hashTable.search(forKey:searchPlate)!))")
+end = DispatchTime.now()
+nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
+print("Time to search for \(searchPlate) in \(numPlate) license plates is \(nanoTime/1000000) milli-seconds")
+
+//=================
+
 // 20 Recursion
 //func printFirstNumbers(_ N: Int) {
 //    if N > 1 {
@@ -54,59 +98,6 @@ import Foundation
 //let hi = 35
 //print("List of prime numbers = \(MathOperation.findPrime(lo, hi))")
 
-//16 hashTable
-//var hashTable = HashTable<String, String>(capacity: 127) //31
-//let letters: NSString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-//var genPlate: String = ""
-//let searchPlate: String = "4TBG788"
-//var numPlate: Int = 1 //5*26*26*26 //*26*26*26; // 25244537/2; // 9*26*26*1000; //9*26*26*26*1000 = 158,184,000;  9*26*26*1000 = 6084000
-//var firstDigit: Int
-//
-//var start = DispatchTime.now() // <<<<<<<<<< Start time
-//for i in 0..<numPlate {
-//    var randomString : NSMutableString = NSMutableString(capacity: 3)
-//    
-//    for j in 0..<3 {
-//        //var length = UInt32(letters.length)
-//        var randIndex = arc4random_uniform(26)
-//        randomString.appendFormat("%C", letters.character(at: Int(randIndex)))
-//    }
-//    
-//    firstDigit = Int(arc4random_uniform(5+1)) + 2
-//    //print(firstDigit)
-//    if (firstDigit >= 2 ) {
-//        genPlate = String(format: "%d%@%.3d", firstDigit, randomString, arc4random_uniform(1000))
-//        //genPlate = String(firstDigit) + (randomString as String) + String(format: "%.3d", arc4random_uniform(1000))
-//        hashTable[genPlate] = "Active"
-//        print(genPlate)
-//
-//    }
-//    
-//    //    if i == numPlate - 1 {
-//    //        hashTable["5FAU288"] = "Active"
-//    //    }
-//
-//}
-//var end = DispatchTime.now()   // <<<<<<<<<<   end time
-//var nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds //
-//print("Time to generate a hashtable of \(numPlate) driver license is \(nanoTime/1000000) milli-seconds")
-//
-////print("5FAU288 is \(String(describing: hashTable.search(forKey:"5FAU288")!))")
-//
-//start = DispatchTime.now()
-//print("Searching for \(searchPlate) ... \(String(describing: hashTable.search(forKey:searchPlate)!))")
-//end = DispatchTime.now()   // <<<<<<<<<<   end time
-//nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds //
-//print("Time to search for \(searchPlate) in \(numPlate) license plates is \(nanoTime/1000000) milli-seconds")
-
-//==
-//var hashTable = HashTable<String, String>(capacity: 31)
-//hashTable["5FAU288"] = "Active"   // insert
-//let x = hashTable["5FAU288"]     // lookup
-//print("5FAU288 is \(String(describing: x!))")
-//hashTable["5FAU288"] = "Inactive"   // update
-//print("5FAU288 is \(String(describing: hashTable.value(forKey:"5FAU288")!))")
-//print("5FAU289 is \(String(describing: hashTable.search(forKey:"5FAU289")!))")
 
 // 15 breadthFirstSearch depthFirstSearch
 //let adjMatrix: [[Int]] = [[0, 1, 0, 1, 1, 0, 0, 0, 0],
@@ -257,8 +248,10 @@ import Foundation
 //print("found \(searchStr) at index \(binarySearch(students, searchStr)!)")
 //
 // 4 bubbleSort, selectionSort insertionSort quickSort mergeSort
-var array = [4, 3] //, 2, 4, 5, 1, 7]
-var students = ["Nora", "Xuan", "Fern", "Ryan", "Rainer"]
+//var array = [4, 3] //, 2, 4, 5, 1, 7]
+//var students = ["Nora", "Xuan", "Fern", "Ryan", "Rainer"]
+//students.sort(by: <)
+//print(students)
 //print("\(quickSort(&array, 0, 1))") // quickSort dn work
 //print("\(quickSort(&students, 0, 4))") // quickSort dn work
 
